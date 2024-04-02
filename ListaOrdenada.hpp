@@ -1,7 +1,8 @@
 #include "lib/ListaDoble.hpp"
 #include <iostream>
 
-template <typename T> class ListaOrdenada {
+template <typename T>
+class ListaOrdenada {
 private:
   ListaDoble<T> lista;
 
@@ -21,16 +22,70 @@ public:
   ListaOrdenada<T> Mezclar(const ListaOrdenada<T> &lista1) const;
 };
 
-template <typename T> ListaOrdenada<T>::ListaOrdenada() {}
+/****************************************************************************************************************/
 
-template <typename T> ListaOrdenada<T>::~ListaOrdenada() { lista.Vaciar(); }
+template <typename T>
+ListaOrdenada<T>::ListaOrdenada() {}
+
+/****************************************************************************************************************/
+
+template <typename T>
+ListaOrdenada<T>::~ListaOrdenada() { lista.Vaciar(); }
+
+/****************************************************************************************************************/
 
 template <typename T>
 ListaOrdenada<T>::ListaOrdenada(const ListaOrdenada<T> &lista1) {
   *this = lista1;
 }
 
+/****************************************************************************************************************/
+
 template <typename T>
 ListaOrdenada<T> &ListaOrdenada<T>::operator=(const ListaOrdenada<T> &lista1) {
   this->lista = lista1.lista;
 }
+
+/****************************************************************************************************************/
+
+template <typename T>
+bool ListaOrdenada<T>::BuscarElemento(T valor) const {
+  return lista.SeEncuentraValor(valor);
+}
+
+/****************************************************************************************************************/
+
+template <typename T>
+void ListaOrdenada<T>::Vaciar() const {
+  lista.Vaciar();
+}
+
+/****************************************************************************************************************/
+
+template <typename T>
+bool ListaOrdenada<T>::EstaVacia() const {
+  return lista.EstaVacia();
+}
+
+/****************************************************************************************************************/
+
+template <typename T>
+int ListaOrdenada<T>::ObtenerTam() const {
+  return lista.ObtenerTam();
+}
+
+/****************************************************************************************************************/
+
+template <typename T>
+void ListaOrdenada<T>::ImprimirAscendente() const {
+  lista.Imprimir();
+}
+
+/****************************************************************************************************************/
+
+template <typename T>
+void ListaOrdenada<T>::ImprimirDescendente() const {
+  lista.ImprimirEnReversa();
+}
+
+/****************************************************************************************************************/
