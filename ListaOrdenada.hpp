@@ -1,5 +1,4 @@
 #include "lib/ListaDoble.hpp"
-#include <iostream>
 
 template <typename T>
 class ListaOrdenada {

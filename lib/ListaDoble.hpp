@@ -8,11 +8,11 @@
 
 /**
  * @class ListaDoble
- * @brief Implementa una lista doblemente enlazada genérica.
+ * @brief Implementa una lista doblemente enlazada genï¿½rica.
  *
- * Esta clase permite realizar operaciones básicas como inserción, eliminación y
- * búsqueda de elementos, manteniendo un enlace doble entre nodos para permitir
- * la navegación en ambas direcciones.
+ * Esta clase permite realizar operaciones bï¿½sicas como inserciï¿½n, eliminaciï¿½n y
+ * bï¿½squeda de elementos, manteniendo un enlace doble entre nodos para permitir
+ * la navegaciï¿½n en ambas direcciones.
  *
  * @tparam T Tipo de datos de los elementos de la lista.
  */
@@ -32,9 +32,9 @@ private:
     Elemento(T valor, Elemento *sig = nullptr, Elemento *ant = nullptr);
   };
 
-  Elemento *ultimo;  ///< Puntero al último elemento de la lista.
+  Elemento *ultimo;  ///< Puntero al ï¿½ltimo elemento de la lista.
   Elemento *primero; ///< Puntero al primer elemento de la lista.
-  int tam;           ///< Tamaño actual de la lista.
+  int tam;           ///< Tamaï¿½o actual de la lista.
 
   /**
    * @brief Elimina un elemento de la lista.
@@ -54,7 +54,7 @@ public:
   ListaDoble(const ListaDoble<T> &lista);
 
   /**
-   * @brief Sobrecarga del operador de asigación
+   * @brief Sobrecarga del operador de asigaciï¿½n
    * @param ListaDoble de un tipo de dato por referencia
    * @return ListaDoble por referencia
    */
@@ -78,9 +78,9 @@ public:
   void AgregarAlFinal(T valor);
 
   /**
-   * @brief Inserta un elemento en una posición específica de la lista.
+   * @brief Inserta un elemento en una posiciï¿½n especï¿½fica de la lista.
    * @param valor Valor del elemento a insertar.
-   * @param pos Posición en la que se insertará el elemento.
+   * @param pos Posiciï¿½n en la que se insertarï¿½ el elemento.
    */
   void AgregarEnPos(T valor, int pos);
 
@@ -95,14 +95,14 @@ public:
   void EliminarDelFinal();
 
   /**
-   * @brief Elimina un elemento de una posición específica.
-   * @param pos Posición del elemento a eliminar.
+   * @brief Elimina un elemento de una posiciï¿½n especï¿½fica.
+   * @param pos Posiciï¿½n del elemento a eliminar.
    */
   void EliminarDePos(int pos);
 
   /**
-   * @brief Elimina elementos que cumplan una condición específica.
-   * @param condicion Función que determina si un elemento debe ser eliminado.
+   * @brief Elimina elementos que cumplan una condiciï¿½n especï¿½fica.
+   * @param condicion Funciï¿½n que determina si un elemento debe ser eliminado.
    */
   void EliminarPorCondicion(bool (*condicion)(T valor));
 
@@ -130,8 +130,8 @@ public:
   int BuscarPos(T valor) const;
 
   /**
-   * @brief Comprueba si la lista está vacía.
-   * @return True si la lista está vacía, False en caso contrario.
+   * @brief Comprueba si la lista estï¿½ vacï¿½a.
+   * @return True si la lista estï¿½ vacï¿½a, False en caso contrario.
    */
   bool EstaVacia() const;
 
@@ -145,12 +145,12 @@ public:
    * @brief Obtiene el valor del ultimo elemento de la lista
    * @return Tipo de dato de la plantilla
    */
-  T ObtenerUltimo() const; ///< Obtiene el valor del último elemento.
+  T ObtenerUltimo() const; ///< Obtiene el valor del ï¿½ltimo elemento.
 
   /**
-   * @brief Obtiene el valor de un elemento en una posición específica.
-   * @param pos Posición del elemento.
-   * @return Valor del elemento en la posición dada.
+   * @brief Obtiene el valor de un elemento en una posiciï¿½n especï¿½fica.
+   * @param pos Posiciï¿½n del elemento.
+   * @return Valor del elemento en la posiciï¿½n dada.
    */
   T ObtenerEnPos(int pos) const;
 
@@ -164,56 +164,56 @@ public:
   T &operator[](int pos);
 
   /**
-   * @brief Modifica el valor de un elemento en una posición específica.
-   * @param pos Posición del elemento a modificar.
+   * @brief Modifica el valor de un elemento en una posiciï¿½n especï¿½fica.
+   * @param pos Posiciï¿½n del elemento a modificar.
    * @param valor Nuevo valor para el elemento.
    */
   void ModificarEnPos(int pos, T valor);
 
   /**
    * @brief Ordena los elementos de la lista utilizando el algoritmo de
-   * ordenamiento por inserción.
+   * ordenamiento por inserciï¿½n.
    */
   void Ordenar();
 
   /**
    * @brief Intercambia el contenido de esta lista con otra lista.
-   * @param lista Lista con la que se intercambiará el contenido.
+   * @param lista Lista con la que se intercambiarï¿½ el contenido.
    */
   void Intercambiar(ListaDoble<T> &lista);
 
   /**
    * @brief Transfiere todos los elementos de esta lista a otra lista, dejando
-   * esta lista vacía.
-   * @param lista Lista destino donde se transferirán los elementos.
+   * esta lista vacï¿½a.
+   * @param lista Lista destino donde se transferirï¿½n los elementos.
    */
   void Transferir(ListaDoble<T> &lista);
 
   /**
-   * @brief Transfiere los elementos de una subsección de esta lista a otra
+   * @brief Transfiere los elementos de una subsecciï¿½n de esta lista a otra
    * lista.
-   * @param lista Lista destino donde se transferirán los elementos.
-   * @param posInicial Posición inicial de la subsección a transferir.
+   * @param lista Lista destino donde se transferirï¿½n los elementos.
+   * @param posInicial Posiciï¿½n inicial de la subsecciï¿½n a transferir.
    */
   void Transferir(ListaDoble<T> &lista, int posInicial);
 
   /**
    * @brief Transfiere los elementos dentro de un rango de posiciones de esta
    * lista a otra lista.
-   * @param lista Lista destino donde se transferirán los elementos.
-   * @param posInicial Posición inicial del rango a transferir.
-   * @param posFinal Posición final del rango a transferir.
+   * @param lista Lista destino donde se transferirï¿½n los elementos.
+   * @param posInicial Posiciï¿½n inicial del rango a transferir.
+   * @param posFinal Posiciï¿½n final del rango a transferir.
    */
   void Transferir(ListaDoble<T> &lista, int posInicial, int posFinal);
 
   /**
-   * @brief Obtiene el tamaño actual de la lista.
-   * @return Número de elementos en la lista.
+   * @brief Obtiene el tamaï¿½o actual de la lista.
+   * @return Nï¿½mero de elementos en la lista.
    */
   int ObtenerTam() const;
 
   /**
-   * @brief Vacía la lista, eliminando todos sus elementos.
+   * @brief Vacï¿½a la lista, eliminando todos sus elementos.
    */
   void Vaciar();
 
@@ -229,28 +229,28 @@ public:
 
   /**
    * @class ListaVacia
-   * @brief Excepción lanzada al realizar operaciones inválidas en una lista
-   * vacía.
+   * @brief Excepciï¿½n lanzada al realizar operaciones invï¿½lidas en una lista
+   * vacï¿½a.
    */
   class ListaVacia : public std::exception {
   public:
     /**
-     * @brief Proporciona el mensaje de la excepción.
-     * @return Mensaje explicativo de la excepción.
+     * @brief Proporciona el mensaje de la excepciï¿½n.
+     * @return Mensaje explicativo de la excepciï¿½n.
      */
     virtual const char *what() const throw() override;
   };
 
   /**
    * @class FueraDeRango
-   * @brief Excepción lanzada al intentar acceder a posiciones fuera del rango
-   * válido.
+   * @brief Excepciï¿½n lanzada al intentar acceder a posiciones fuera del rango
+   * vï¿½lido.
    */
   class FueraDeRango : public std::exception {
   public:
     /**
-     * @brief Proporciona el mensaje de la excepción.
-     * @return Mensaje explicativo de la excepción.
+     * @brief Proporciona el mensaje de la excepciï¿½n.
+     * @return Mensaje explicativo de la excepciï¿½n.
      */
     virtual const char *what() const throw() override;
   };
@@ -299,13 +299,20 @@ ListaDoble<T> &ListaDoble<T>::operator=(const ListaDoble<T> &lista) {
 
 /****************************************************************************************************************/
 
-template <typename T> ListaDoble<T>::~ListaDoble() { Vaciar(); }
+template <typename T> ListaDoble<T>::~ListaDoble() {
+  Vaciar();
+}
 
 /****************************************************************************************************************/
 
 template <typename T> void ListaDoble<T>::AgregarAlInicio(T valor) {
   Elemento *nuevo =
-      new Elemento(valor, primero, EstaVacia() ? nullptr : primero);
+      new Elemento(valor, primero, nullptr);
+  if (EstaVacia()) {
+    ultimo = nuevo;
+  } else {
+    primero->anterior = nuevo;
+  }
   primero = nuevo;
   ++tam;
 }
@@ -318,7 +325,6 @@ template <typename T> void ListaDoble<T>::AgregarAlFinal(T valor) {
     ultimo->siguiente = nuevo;
   } else {
     primero = nuevo;
-    primero->anterior = nullptr;
   }
   ultimo = nuevo;
   ++tam;
@@ -341,6 +347,7 @@ template <typename T> void ListaDoble<T>::AgregarEnPos(T valor, int pos) {
     Elemento *nuevo = new Elemento(valor, ant->siguiente, ant);
     ant->siguiente->anterior = nuevo;
     ant->siguiente = nuevo;
+    if (nuevo->siguiente == nullptr) ultimo = nuevo;
     ++tam;
   }
 }
@@ -368,11 +375,11 @@ template <typename T> void ListaDoble<T>::EliminarDelFinal() {
   if (EstaVacia())
     throw ListaVacia();
   Elemento *porBorrar = ultimo;
-  ultimo = ultimo->anterior;
   if (tam == 1) {
     primero = nullptr;
     ultimo = nullptr;
   } else {
+    ultimo = ultimo->anterior;
     ultimo->siguiente = nullptr;
   }
   delete porBorrar;
