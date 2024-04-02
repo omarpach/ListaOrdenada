@@ -49,6 +49,14 @@ ListaOrdenada<T> &ListaOrdenada<T>::operator=(const ListaOrdenada<T> &lista1) {
 /****************************************************************************************************************/
 
 template <typename T>
+void ListaOrdenada<T>::Eliminar(T valor) {
+  int pos = lista.BuscarPos(valor);
+  lista.EliminarDePos(pos);
+}
+
+/****************************************************************************************************************/
+
+template <typename T>
 bool ListaOrdenada<T>::BuscarElemento(T valor) const {
   return lista.SeEncuentraValor(valor);
 }
