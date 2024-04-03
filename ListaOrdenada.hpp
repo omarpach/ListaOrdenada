@@ -1,7 +1,6 @@
 #include "lib/ListaDoble.hpp"
 
-template <typename T>
-class ListaOrdenada {
+template <typename T> class ListaOrdenada {
 private:
   ListaDoble<T> lista;
 
@@ -23,13 +22,11 @@ public:
 
 /****************************************************************************************************************/
 
-template <typename T>
-ListaOrdenada<T>::ListaOrdenada() {}
+template <typename T> ListaOrdenada<T>::ListaOrdenada() {}
 
 /****************************************************************************************************************/
 
-template <typename T>
-ListaOrdenada<T>::~ListaOrdenada() { lista.Vaciar(); }
+template <typename T> ListaOrdenada<T>::~ListaOrdenada() { lista.Vaciar(); }
 
 /****************************************************************************************************************/
 
@@ -47,51 +44,56 @@ ListaOrdenada<T> &ListaOrdenada<T>::operator=(const ListaOrdenada<T> &lista1) {
 
 /****************************************************************************************************************/
 
-template <typename T>
-void ListaOrdenada<T>::Eliminar(T valor) {
+template <typename T> void ListaOrdenada<T>::Eliminar(T valor) {
   int pos = lista.BuscarPos(valor);
   lista.EliminarDePos(pos);
 }
 
 /****************************************************************************************************************/
 
-template <typename T>
-bool ListaOrdenada<T>::BuscarElemento(T valor) const {
+template <typename T> void ListaOrdenada<T>::Agregar(T valor) {
+  if (lista.EstaVacia())
+    lista.AgregarAlInicio(valor);
+  else {
+    int pos;
+    int tam = lista.ObtenerTam();
+    for (pos = 0; pos < tam && lista[pos] < valor; pos++)
+      ;
+    lista.AgregarEnPos(valor, pos);
+  }
+}
+
+/****************************************************************************************************************/
+
+template <typename T> bool ListaOrdenada<T>::BuscarElemento(T valor) const {
   return lista.SeEncuentraValor(valor);
 }
 
 /****************************************************************************************************************/
 
-template <typename T>
-void ListaOrdenada<T>::Vaciar() const {
-  lista.Vaciar();
-}
+template <typename T> void ListaOrdenada<T>::Vaciar() const { lista.Vaciar(); }
 
 /****************************************************************************************************************/
 
-template <typename T>
-bool ListaOrdenada<T>::EstaVacia() const {
+template <typename T> bool ListaOrdenada<T>::EstaVacia() const {
   return lista.EstaVacia();
 }
 
 /****************************************************************************************************************/
 
-template <typename T>
-int ListaOrdenada<T>::ObtenerTam() const {
+template <typename T> int ListaOrdenada<T>::ObtenerTam() const {
   return lista.ObtenerTam();
 }
 
 /****************************************************************************************************************/
 
-template <typename T>
-void ListaOrdenada<T>::ImprimirAscendente() const {
+template <typename T> void ListaOrdenada<T>::ImprimirAscendente() const {
   lista.Imprimir();
 }
 
 /****************************************************************************************************************/
 
-template <typename T>
-void ListaOrdenada<T>::ImprimirDescendente() const {
+template <typename T> void ListaOrdenada<T>::ImprimirDescendente() const {
   lista.ImprimirEnReversa();
 }
 
