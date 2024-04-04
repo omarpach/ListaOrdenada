@@ -46,12 +46,12 @@ int main() {
     cout << "Se encuentra elemento 2 en la lista 1? " << boolalpha
          << lista1.BuscarElemento(2) << endl;
 
-    cout << "Se encuentra vacia la lista 2? " << boolalpha
-         << lista2.EstaVacia() // TODO: Poner ? al revés
+    cout << "\250Se encuentra vacia la lista 2? " << boolalpha
+         << lista2.EstaVacia()
          << endl;
 
-    cout << "Tamano lista 1: " << lista1.ObtenerTam()
-         << endl; // TODO: Poner acento ñ
+    cout << "Tama\244o lista 1: " << lista1.ObtenerTam()
+         << endl;
 
     listaMezclada = lista1.Mezclar(lista2);
     cout << "Listas 1 y 2 mezcladas: ";
@@ -72,6 +72,6 @@ int main() {
   } catch (const char *e) {
     cerr << "Error: " << e << endl;
   } catch (...) {
-    cerr << "Ocurrio un error inesperado" << endl;
+    cerr << "Ocurri\242 un error inesperado..." << endl;
   }
 }
