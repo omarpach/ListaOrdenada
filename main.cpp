@@ -27,19 +27,23 @@ int main() {
     lista1.ImprimirAscendente();
     cout << endl;
 
-    cout << "Lista  1 Ordenada Descendentemente: ";
+    cout << "Lista 1 Ordenada Descendentemente: ";
     lista1.ImprimirDescendente();
     cout << endl;
 
     cout << "Lista 2 Ordenada Ascendentemente: ";
     lista2.ImprimirAscendente();
-    cout << endl;
+    cout << '\n' << endl;
 
-    cout << "Se encuentra elemento 2 en la lista 1? " << boolalpha << lista1.BuscarElemento(2) << endl;
+    cout << "Se encuentra elemento 2 en la lista 1? " << boolalpha
+         << lista1.BuscarElemento(2) << endl;
 
-    cout << "Se encuentra vacia la lista 2? " << boolalpha << lista2.EstaVacia() << endl;
+    cout << "Se encuentra vacia la lista 2? " << boolalpha
+         << lista2.EstaVacia() // TODO: Poner ? al revés
+         << endl;
 
-    cout << "Tamaño lista 1: " << lista1.ObtenerTam() << endl;
+    cout << "Tamano lista 1: " << lista1.ObtenerTam()
+         << endl; // TODO: Poner acento ñ
 
     listaMezclada = lista1.Mezclar(lista2);
     cout << "Listas 1 y 2 mezcladas: ";
@@ -48,17 +52,18 @@ int main() {
 
     cout << "Vaciando lista 1..." << endl;
     lista1.Vaciar();
+    cout << "Lista 1: ";
     lista1.ImprimirAscendente();
     cout << endl;
 
-
+    return 0;
   } catch (ListaDoble<int>::ListaVacia &exc) {
     cerr << "Error: " << exc.what() << endl;
-  } catch(ListaDoble<int>::FueraDeRango &exc) {
+  } catch (ListaDoble<int>::FueraDeRango &exc) {
     cerr << "Error: " << exc.what() << endl;
-  } catch (const char* e) {
+  } catch (const char *e) {
     cerr << "Error: " << e << endl;
   } catch (...) {
-    cerr << "Ocurrio un error inesperado" << endl; // TODO: Poner acentos, letra ñ y ¿
+    cerr << "Ocurrio un error inesperado" << endl;
   }
 }

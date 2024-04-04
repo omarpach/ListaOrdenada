@@ -299,15 +299,12 @@ ListaDoble<T> &ListaDoble<T>::operator=(const ListaDoble<T> &lista) {
 
 /****************************************************************************************************************/
 
-template <typename T> ListaDoble<T>::~ListaDoble() {
-  Vaciar();
-}
+template <typename T> ListaDoble<T>::~ListaDoble() { Vaciar(); }
 
 /****************************************************************************************************************/
 
 template <typename T> void ListaDoble<T>::AgregarAlInicio(T valor) {
-  Elemento *nuevo =
-      new Elemento(valor, primero, nullptr);
+  Elemento *nuevo = new Elemento(valor, primero, nullptr);
   if (EstaVacia()) {
     ultimo = nuevo;
   } else {
@@ -347,7 +344,8 @@ template <typename T> void ListaDoble<T>::AgregarEnPos(T valor, int pos) {
     Elemento *nuevo = new Elemento(valor, ant->siguiente, ant);
     ant->siguiente->anterior = nuevo;
     ant->siguiente = nuevo;
-    if (nuevo->siguiente == nullptr) ultimo = nuevo;
+    if (nuevo->siguiente == nullptr)
+      ultimo = nuevo;
     ++tam;
   }
 }
@@ -649,7 +647,7 @@ template <typename T> void ListaDoble<T>::Imprimir() const {
       std::cout << actual->valor << ", ";
       actual = actual->siguiente;
     }
-    std::cout << "\b\b )" << std::endl;
+    std::cout << "\b\b )";
   }
 }
 
@@ -665,7 +663,7 @@ template <typename T> void ListaDoble<T>::ImprimirEnReversa() const {
       std::cout << actual->valor << ", ";
       actual = actual->anterior;
     }
-    std::cout << "\b\b  )";
+    std::cout << "\b\b )";
   }
 }
 
