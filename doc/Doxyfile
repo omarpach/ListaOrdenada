@@ -1,0 +1,7 @@
+PROJECT_NAME           = "Lista Ordenada"
+INPUT                  = ../ListaOrdenada.hpp ../main.cpp ../lib/ListaDoble.hpp
+RECURSIVE              = NO
+EXTRACT_ALL            = YES
+SOURCE_BROWSER         = YES
+GENERATE_LATEX         = YES
+GENERATE_HTML          = YES

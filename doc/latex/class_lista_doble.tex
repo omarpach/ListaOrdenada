@@ -1,0 +1,680 @@
+\doxysection{Lista\+Doble\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_lista_doble}{}\label{class_lista_doble}\index{ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}}
+
+
+Implementa una lista doblemente enlazada gen{\ucr}rica.  
+
+
+
+
+{\ttfamily \#include $<$Lista\+Doble.\+hpp$>$}
+
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_lista_doble_1_1_fuera_de_rango}{Fuera\+De\+Rango}}
+\begin{DoxyCompactList}\small\item\em Excepci{\ucr}n lanzada al intentar acceder a posiciones fuera del rango v{\ucr}lido. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_lista_doble_1_1_lista_vacia}{Lista\+Vacia}}
+\begin{DoxyCompactList}\small\item\em Excepci{\ucr}n lanzada al realizar operaciones inv{\ucr}lidas en una lista vac{\ucr}a. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_lista_doble_ac3825a4a97b896041e8d50e1ef836bfa}{Lista\+Doble}} ()
+\begin{DoxyCompactList}\small\item\em Constructor por default. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista_doble_a6a8c8210076bdf71aa4ba5d8d21ad59b}{Lista\+Doble}} (\mbox{\hyperlink{class_lista_ordenada}{const}} \mbox{\hyperlink{class_lista_doble}{Lista\+Doble}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \&lista)
+\begin{DoxyCompactList}\small\item\em Constructor de copias. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista_doble}{Lista\+Doble}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \& \mbox{\hyperlink{class_lista_doble_a492eef6555be5155f8c4a0e9f2cf1c6c}{operator=}} (\mbox{\hyperlink{class_lista_ordenada}{const}} \mbox{\hyperlink{class_lista_doble}{Lista\+Doble}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \&lista)
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador de asigaci{\ucr}n. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista_doble_ac9fb0ce29302435f07bc073fd16c59db}{\texorpdfstring{$\sim$}{\string~}\+Lista\+Doble}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista_ordenada}{void}} \mbox{\hyperlink{class_lista_doble_acb6e6a662ee5e1a82aa80a162acccd36}{Agregar\+Al\+Inicio}} (\mbox{\hyperlink{class_lista_ordenada}{T}} valor)
+\begin{DoxyCompactList}\small\item\em Agrega un elemento al inicio de la lista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista_ordenada}{void}} \mbox{\hyperlink{class_lista_doble_a59dcbd4d6278b6897ccd9e70aed9f43a}{Agregar\+Al\+Final}} (\mbox{\hyperlink{class_lista_ordenada}{T}} valor)
+\begin{DoxyCompactList}\small\item\em Agrega un elemento al final de la lista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista_ordenada}{void}} \mbox{\hyperlink{class_lista_doble_a190e810955b7316939f0c0ba14f4eb97}{Agregar\+En\+Pos}} (\mbox{\hyperlink{class_lista_ordenada}{T}} valor, \mbox{\hyperlink{class_lista_ordenada}{int}} \mbox{\hyperlink{class_lista_ordenada}{pos}})
+\begin{DoxyCompactList}\small\item\em Inserta un elemento en una posici{\ucr}n espec{\ucr}fica de la lista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista_ordenada}{void}} \mbox{\hyperlink{class_lista_doble_ae6d3d1388752ff6c70e7ce5185e07d5c}{Eliminar\+Del\+Inicio}} ()
+\begin{DoxyCompactList}\small\item\em Elimina el primer elemento de la lista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista_ordenada}{void}} \mbox{\hyperlink{class_lista_doble_a8dac84900977a30d630044f282d61164}{Eliminar\+Del\+Final}} ()
+\begin{DoxyCompactList}\small\item\em Elimina el ultimo elemento de la lista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista_ordenada}{void}} \mbox{\hyperlink{class_lista_doble_a81edbd3d3a12950f11dcd1bde4c57c6b}{Eliminar\+De\+Pos}} (\mbox{\hyperlink{class_lista_ordenada}{int}} \mbox{\hyperlink{class_lista_ordenada}{pos}})
+\begin{DoxyCompactList}\small\item\em Elimina un elemento de una posici{\ucr}n espec{\ucr}fica. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista_ordenada}{void}} \mbox{\hyperlink{class_lista_doble_a9dd39cf6232a9b8b5635557197b50e11}{Eliminar\+Por\+Condicion}} (\mbox{\hyperlink{class_lista_ordenada}{bool}}(\texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_lista_ordenada}{condicion}})(\mbox{\hyperlink{class_lista_ordenada}{T}} valor))
+\begin{DoxyCompactList}\small\item\em Elimina elementos que cumplan una condici{\ucr}n espec{\ucr}fica. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista_ordenada}{void}} \mbox{\hyperlink{class_lista_doble_a2b6dd226a5c935d653bfa54a2243524d}{Eliminar\+Ocurrencia}} (\mbox{\hyperlink{class_lista_ordenada}{T}} valor)
+\begin{DoxyCompactList}\small\item\em Elimina todas las ocurrencias de la lista del valor recibido. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista_ordenada}{void}} \mbox{\hyperlink{class_lista_doble_a4ee815e86d79eb8fe21c5d22d88749bb}{Eliminar\+Repetidos}} ()
+\begin{DoxyCompactList}\small\item\em Elimina elementos repetidos de la lista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista_ordenada}{bool}} \mbox{\hyperlink{class_lista_doble_ad3b67be2471893c0cf080f06083aa188}{Se\+Encuentra\+Valor}} (\mbox{\hyperlink{class_lista_ordenada}{T}} valor) \mbox{\hyperlink{class_lista_ordenada}{const}}
+\begin{DoxyCompactList}\small\item\em Buscar si existe un valor en la lista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista_ordenada}{int}} \mbox{\hyperlink{class_lista_doble_aa67b20440b0abbc997b64a9c00dbf43c}{Buscar\+Pos}} (\mbox{\hyperlink{class_lista_ordenada}{T}} valor) \mbox{\hyperlink{class_lista_ordenada}{const}}
+\begin{DoxyCompactList}\small\item\em Buscar el indice en la lista de un valor, si hay varios, regresa el primer indice de la lista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista_ordenada}{bool}} \mbox{\hyperlink{class_lista_doble_a5720c23ab13c75d30469ccbb3fdda3ec}{Esta\+Vacia}} () \mbox{\hyperlink{class_lista_ordenada}{const}}
+\begin{DoxyCompactList}\small\item\em Comprueba si la lista est{\ucr} vac{\ucr}a. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista_ordenada}{T}} \mbox{\hyperlink{class_lista_doble_a7acc1120ec4d1491b699ca51d3c66af6}{Obtener\+Primero}} () \mbox{\hyperlink{class_lista_ordenada}{const}}
+\begin{DoxyCompactList}\small\item\em Obtiene el valor del primero elemento de la lista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista_ordenada}{T}} \mbox{\hyperlink{class_lista_doble_a89d64a15cdc76bf2f562198dbb932c77}{Obtener\+Ultimo}} () \mbox{\hyperlink{class_lista_ordenada}{const}}
+\begin{DoxyCompactList}\small\item\em Obtiene el valor del ultimo elemento de la lista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista_ordenada}{T}} \mbox{\hyperlink{class_lista_doble_a83b29d2dc513004aa8b9d54f7ec2e561}{Obtener\+En\+Pos}} (\mbox{\hyperlink{class_lista_ordenada}{int}} \mbox{\hyperlink{class_lista_ordenada}{pos}}) \mbox{\hyperlink{class_lista_ordenada}{const}}
+\begin{DoxyCompactList}\small\item\em Obtiene el valor de un elemento en una posici{\ucr}n espec{\ucr}fica. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista_ordenada}{const}} \mbox{\hyperlink{class_lista_ordenada}{T}} \& \mbox{\hyperlink{class_lista_doble_a3c57564522fbcef56a6554a0ce2598ee}{operator\mbox{[}$\,$\mbox{]}}} (\mbox{\hyperlink{class_lista_ordenada}{int}} \mbox{\hyperlink{class_lista_ordenada}{pos}}) \mbox{\hyperlink{class_lista_ordenada}{const}}
+\begin{DoxyCompactList}\small\item\em Acceso de solo lectura a un elemento por su posicion. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista_ordenada}{T}} \& \mbox{\hyperlink{class_lista_doble_ade1169fc7584302c8570dcb433a4ca0a}{operator\mbox{[}$\,$\mbox{]}}} (\mbox{\hyperlink{class_lista_ordenada}{int}} \mbox{\hyperlink{class_lista_ordenada}{pos}})
+\begin{DoxyCompactList}\small\item\em Acceso de escritura a un elemento por su posicion. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista_ordenada}{void}} \mbox{\hyperlink{class_lista_doble_aa575fdc11a79f21ad565e67fbeac802c}{Modificar\+En\+Pos}} (\mbox{\hyperlink{class_lista_ordenada}{int}} \mbox{\hyperlink{class_lista_ordenada}{pos}}, \mbox{\hyperlink{class_lista_ordenada}{T}} valor)
+\begin{DoxyCompactList}\small\item\em Modifica el valor de un elemento en una posici{\ucr}n espec{\ucr}fica. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista_ordenada}{void}} \mbox{\hyperlink{class_lista_doble_a50c3178179fe203a5afa25c16cc7f092}{Ordenar}} ()
+\begin{DoxyCompactList}\small\item\em Ordena los elementos de la lista utilizando el algoritmo de ordenamiento por inserci{\ucr}n. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista_ordenada}{void}} \mbox{\hyperlink{class_lista_doble_adb8c5750c4e47da586a36cc0f6523b40}{Intercambiar}} (\mbox{\hyperlink{class_lista_doble}{Lista\+Doble}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \&lista)
+\begin{DoxyCompactList}\small\item\em Intercambia el contenido de esta lista con otra lista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista_ordenada}{void}} \mbox{\hyperlink{class_lista_doble_a6e526eb832f9f0185f2948e2225b63da}{Transferir}} (\mbox{\hyperlink{class_lista_doble}{Lista\+Doble}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \&lista)
+\begin{DoxyCompactList}\small\item\em Transfiere todos los elementos de esta lista a otra lista, dejando esta lista vac{\ucr}a. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista_ordenada}{void}} \mbox{\hyperlink{class_lista_doble_a2d13b191a1bdf1691ad4cab39c8e6ae7}{Transferir}} (\mbox{\hyperlink{class_lista_doble}{Lista\+Doble}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \&lista, \mbox{\hyperlink{class_lista_ordenada}{int}} \mbox{\hyperlink{class_lista_ordenada}{pos\+Inicial}})
+\begin{DoxyCompactList}\small\item\em Transfiere los elementos de una subsecci{\ucr}n de esta lista a otra lista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista_ordenada}{void}} \mbox{\hyperlink{class_lista_doble_a4692d73f4bea53679dab3ca8c6b1c377}{Transferir}} (\mbox{\hyperlink{class_lista_doble}{Lista\+Doble}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \&lista, \mbox{\hyperlink{class_lista_ordenada}{int}} \mbox{\hyperlink{class_lista_ordenada}{pos\+Inicial}}, \mbox{\hyperlink{class_lista_ordenada}{int}} \mbox{\hyperlink{class_lista_ordenada}{pos\+Final}})
+\begin{DoxyCompactList}\small\item\em Transfiere los elementos dentro de un rango de posiciones de esta lista a otra lista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista_ordenada}{int}} \mbox{\hyperlink{class_lista_doble_a16192ea4f2f2d4f2765945d9e0bd489d}{Obtener\+Tam}} () \mbox{\hyperlink{class_lista_ordenada}{const}}
+\begin{DoxyCompactList}\small\item\em Obtiene el tama{\ucr}o actual de la lista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista_ordenada}{void}} \mbox{\hyperlink{class_lista_doble_a2ff59f46ed34cd934c29339c9c4ea2c9}{Vaciar}} ()
+\begin{DoxyCompactList}\small\item\em Vac{\ucr}a la lista, eliminando todos sus elementos. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista_ordenada}{void}} \mbox{\hyperlink{class_lista_doble_a0c5923a8c19955faaa29b92f3af74f9d}{Imprimir}} () \mbox{\hyperlink{class_lista_ordenada}{const}}
+\begin{DoxyCompactList}\small\item\em Imprime los elementos de la lista en orden. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista_ordenada}{void}} \mbox{\hyperlink{class_lista_doble_ae375dd7fbbc4f0ccdff3b351db52ffbf}{Imprimir\+En\+Reversa}} () \mbox{\hyperlink{class_lista_ordenada}{const}}
+\begin{DoxyCompactList}\small\item\em Imprime los elementos de la lista en orden inverso. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$\mbox{\hyperlink{class_lista_ordenada}{typename}} \mbox{\hyperlink{class_lista_ordenada}{T}}$>$\newline
+class Lista\+Doble$<$ T $>$}
+Implementa una lista doblemente enlazada gen{\ucr}rica. 
+
+Esta clase permite realizar operaciones b{\ucr}sicas como inserci{\ucr}n, eliminaci{\ucr}n y b{\ucr}squeda de elementos, manteniendo un enlace doble entre nodos para permitir la navegaci{\ucr}n en ambas direcciones.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Tipo de datos de los elementos de la lista. \\
+\hline
+\end{DoxyTemplParams}
+
+
+Definition at line \mbox{\hyperlink{_lista_doble_8hpp_source_l00019}{19}} of file \mbox{\hyperlink{_lista_doble_8hpp_source}{Lista\+Doble.\+hpp}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_lista_doble_ac3825a4a97b896041e8d50e1ef836bfa}\label{class_lista_doble_ac3825a4a97b896041e8d50e1ef836bfa} 
+\index{ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}!ListaDoble@{ListaDoble}}
+\index{ListaDoble@{ListaDoble}!ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ListaDoble()}{ListaDoble()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_lista_ordenada}{typename}} \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \\
+\mbox{\hyperlink{class_lista_doble}{Lista\+Doble}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$\mbox{\hyperlink{class_lista_doble}{\+::\+Lista\+Doble}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor por default. 
+
+
+
+Definition at line \mbox{\hyperlink{_lista_doble_8hpp_source_l00271}{271}} of file \mbox{\hyperlink{_lista_doble_8hpp_source}{Lista\+Doble.\+hpp}}.
+
+\Hypertarget{class_lista_doble_a6a8c8210076bdf71aa4ba5d8d21ad59b}\label{class_lista_doble_a6a8c8210076bdf71aa4ba5d8d21ad59b} 
+\index{ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}!ListaDoble@{ListaDoble}}
+\index{ListaDoble@{ListaDoble}!ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ListaDoble()}{ListaDoble()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_lista_ordenada}{typename}} \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \\
+\mbox{\hyperlink{class_lista_doble}{Lista\+Doble}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$\mbox{\hyperlink{class_lista_doble}{\+::\+Lista\+Doble}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lista_ordenada}{const}} \mbox{\hyperlink{class_lista_doble}{Lista\+Doble}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \&}]{lista }\end{DoxyParamCaption})}
+
+
+
+Constructor de copias. 
+
+
+
+Definition at line \mbox{\hyperlink{_lista_doble_8hpp_source_l00280}{280}} of file \mbox{\hyperlink{_lista_doble_8hpp_source}{Lista\+Doble.\+hpp}}.
+
+\Hypertarget{class_lista_doble_ac9fb0ce29302435f07bc073fd16c59db}\label{class_lista_doble_ac9fb0ce29302435f07bc073fd16c59db} 
+\index{ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}!````~ListaDoble@{\texorpdfstring{$\sim$}{\string~}ListaDoble}}
+\index{````~ListaDoble@{\texorpdfstring{$\sim$}{\string~}ListaDoble}!ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}ListaDoble()}{\string~ListaDoble()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_lista_ordenada}{typename}} \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \\
+\mbox{\hyperlink{class_lista_doble}{Lista\+Doble}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$\+::\texorpdfstring{$\sim$}{\string~}\mbox{\hyperlink{class_lista_doble}{Lista\+Doble}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+
+
+Definition at line \mbox{\hyperlink{_lista_doble_8hpp_source_l00302}{302}} of file \mbox{\hyperlink{_lista_doble_8hpp_source}{Lista\+Doble.\+hpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_lista_doble_a59dcbd4d6278b6897ccd9e70aed9f43a}\label{class_lista_doble_a59dcbd4d6278b6897ccd9e70aed9f43a} 
+\index{ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}!AgregarAlFinal@{AgregarAlFinal}}
+\index{AgregarAlFinal@{AgregarAlFinal}!ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{AgregarAlFinal()}{AgregarAlFinal()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_lista_ordenada}{typename}} \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \\
+\mbox{\hyperlink{class_lista_ordenada}{void}} \mbox{\hyperlink{class_lista_doble}{Lista\+Doble}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$\+::\+Agregar\+Al\+Final (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lista_ordenada}{T}}}]{valor }\end{DoxyParamCaption})}
+
+
+
+Agrega un elemento al final de la lista. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em valor} & Valor del elemento a agregar. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_lista_doble_8hpp_source_l00319}{319}} of file \mbox{\hyperlink{_lista_doble_8hpp_source}{Lista\+Doble.\+hpp}}.
+
+\Hypertarget{class_lista_doble_acb6e6a662ee5e1a82aa80a162acccd36}\label{class_lista_doble_acb6e6a662ee5e1a82aa80a162acccd36} 
+\index{ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}!AgregarAlInicio@{AgregarAlInicio}}
+\index{AgregarAlInicio@{AgregarAlInicio}!ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{AgregarAlInicio()}{AgregarAlInicio()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_lista_ordenada}{typename}} \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \\
+\mbox{\hyperlink{class_lista_ordenada}{void}} \mbox{\hyperlink{class_lista_doble}{Lista\+Doble}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$\+::\+Agregar\+Al\+Inicio (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lista_ordenada}{T}}}]{valor }\end{DoxyParamCaption})}
+
+
+
+Agrega un elemento al inicio de la lista. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em valor} & Valor del elemento a agregar. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_lista_doble_8hpp_source_l00306}{306}} of file \mbox{\hyperlink{_lista_doble_8hpp_source}{Lista\+Doble.\+hpp}}.
+
+\Hypertarget{class_lista_doble_a190e810955b7316939f0c0ba14f4eb97}\label{class_lista_doble_a190e810955b7316939f0c0ba14f4eb97} 
+\index{ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}!AgregarEnPos@{AgregarEnPos}}
+\index{AgregarEnPos@{AgregarEnPos}!ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{AgregarEnPos()}{AgregarEnPos()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_lista_ordenada}{typename}} \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \\
+\mbox{\hyperlink{class_lista_ordenada}{void}} \mbox{\hyperlink{class_lista_doble}{Lista\+Doble}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$\+::\+Agregar\+En\+Pos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lista_ordenada}{T}}}]{valor,  }\item[{\mbox{\hyperlink{class_lista_ordenada}{int}}}]{pos }\end{DoxyParamCaption})}
+
+
+
+Inserta un elemento en una posici{\ucr}n espec{\ucr}fica de la lista. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em valor} & Valor del elemento a insertar. \\
+\hline
+{\em pos} & Posici{\ucr}n en la que se insertar{\ucr} el elemento. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_lista_doble_8hpp_source_l00332}{332}} of file \mbox{\hyperlink{_lista_doble_8hpp_source}{Lista\+Doble.\+hpp}}.
+
+\Hypertarget{class_lista_doble_aa67b20440b0abbc997b64a9c00dbf43c}\label{class_lista_doble_aa67b20440b0abbc997b64a9c00dbf43c} 
+\index{ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}!BuscarPos@{BuscarPos}}
+\index{BuscarPos@{BuscarPos}!ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{BuscarPos()}{BuscarPos()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_lista_ordenada}{typename}} \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \\
+\mbox{\hyperlink{class_lista_ordenada}{int}} \mbox{\hyperlink{class_lista_doble}{Lista\+Doble}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$\+::\+Buscar\+Pos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lista_ordenada}{T}}}]{valor }\end{DoxyParamCaption}) const}
+
+
+
+Buscar el indice en la lista de un valor, si hay varios, regresa el primer indice de la lista. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Indice} & del valor en la lista \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_lista_doble_8hpp_source_l00481}{481}} of file \mbox{\hyperlink{_lista_doble_8hpp_source}{Lista\+Doble.\+hpp}}.
+
+\Hypertarget{class_lista_doble_a8dac84900977a30d630044f282d61164}\label{class_lista_doble_a8dac84900977a30d630044f282d61164} 
+\index{ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}!EliminarDelFinal@{EliminarDelFinal}}
+\index{EliminarDelFinal@{EliminarDelFinal}!ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{EliminarDelFinal()}{EliminarDelFinal()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_lista_ordenada}{typename}} \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \\
+\mbox{\hyperlink{class_lista_ordenada}{void}} \mbox{\hyperlink{class_lista_doble}{Lista\+Doble}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$\+::\+Eliminar\+Del\+Final (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Elimina el ultimo elemento de la lista. 
+
+
+
+Definition at line \mbox{\hyperlink{_lista_doble_8hpp_source_l00372}{372}} of file \mbox{\hyperlink{_lista_doble_8hpp_source}{Lista\+Doble.\+hpp}}.
+
+\Hypertarget{class_lista_doble_ae6d3d1388752ff6c70e7ce5185e07d5c}\label{class_lista_doble_ae6d3d1388752ff6c70e7ce5185e07d5c} 
+\index{ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}!EliminarDelInicio@{EliminarDelInicio}}
+\index{EliminarDelInicio@{EliminarDelInicio}!ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{EliminarDelInicio()}{EliminarDelInicio()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_lista_ordenada}{typename}} \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \\
+\mbox{\hyperlink{class_lista_ordenada}{void}} \mbox{\hyperlink{class_lista_doble}{Lista\+Doble}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$\+::\+Eliminar\+Del\+Inicio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Elimina el primer elemento de la lista. 
+
+
+
+Definition at line \mbox{\hyperlink{_lista_doble_8hpp_source_l00355}{355}} of file \mbox{\hyperlink{_lista_doble_8hpp_source}{Lista\+Doble.\+hpp}}.
+
+\Hypertarget{class_lista_doble_a81edbd3d3a12950f11dcd1bde4c57c6b}\label{class_lista_doble_a81edbd3d3a12950f11dcd1bde4c57c6b} 
+\index{ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}!EliminarDePos@{EliminarDePos}}
+\index{EliminarDePos@{EliminarDePos}!ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{EliminarDePos()}{EliminarDePos()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_lista_ordenada}{typename}} \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \\
+\mbox{\hyperlink{class_lista_ordenada}{void}} \mbox{\hyperlink{class_lista_doble}{Lista\+Doble}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$\+::\+Eliminar\+De\+Pos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lista_ordenada}{int}}}]{pos }\end{DoxyParamCaption})}
+
+
+
+Elimina un elemento de una posici{\ucr}n espec{\ucr}fica. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & Posici{\ucr}n del elemento a eliminar. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_lista_doble_8hpp_source_l00389}{389}} of file \mbox{\hyperlink{_lista_doble_8hpp_source}{Lista\+Doble.\+hpp}}.
+
+\Hypertarget{class_lista_doble_a2b6dd226a5c935d653bfa54a2243524d}\label{class_lista_doble_a2b6dd226a5c935d653bfa54a2243524d} 
+\index{ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}!EliminarOcurrencia@{EliminarOcurrencia}}
+\index{EliminarOcurrencia@{EliminarOcurrencia}!ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{EliminarOcurrencia()}{EliminarOcurrencia()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_lista_ordenada}{typename}} \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \\
+\mbox{\hyperlink{class_lista_ordenada}{void}} \mbox{\hyperlink{class_lista_doble}{Lista\+Doble}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$\+::\+Eliminar\+Ocurrencia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lista_ordenada}{T}}}]{valor }\end{DoxyParamCaption})}
+
+
+
+Elimina todas las ocurrencias de la lista del valor recibido. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em valor} & del que se quieren eliminar las ocurrencias \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_lista_doble_8hpp_source_l00426}{426}} of file \mbox{\hyperlink{_lista_doble_8hpp_source}{Lista\+Doble.\+hpp}}.
+
+\Hypertarget{class_lista_doble_a9dd39cf6232a9b8b5635557197b50e11}\label{class_lista_doble_a9dd39cf6232a9b8b5635557197b50e11} 
+\index{ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}!EliminarPorCondicion@{EliminarPorCondicion}}
+\index{EliminarPorCondicion@{EliminarPorCondicion}!ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{EliminarPorCondicion()}{EliminarPorCondicion()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_lista_ordenada}{typename}} \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \\
+\mbox{\hyperlink{class_lista_ordenada}{void}} \mbox{\hyperlink{class_lista_doble}{Lista\+Doble}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$\+::\+Eliminar\+Por\+Condicion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lista_ordenada}{bool}}(\texorpdfstring{$\ast$}{*})(\mbox{\hyperlink{class_lista_ordenada}{T}} valor)}]{condicion }\end{DoxyParamCaption})}
+
+
+
+Elimina elementos que cumplan una condici{\ucr}n espec{\ucr}fica. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em condicion} & Funci{\ucr}n que determina si un elemento debe ser eliminado. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_lista_doble_8hpp_source_l00687}{687}} of file \mbox{\hyperlink{_lista_doble_8hpp_source}{Lista\+Doble.\+hpp}}.
+
+\Hypertarget{class_lista_doble_a4ee815e86d79eb8fe21c5d22d88749bb}\label{class_lista_doble_a4ee815e86d79eb8fe21c5d22d88749bb} 
+\index{ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}!EliminarRepetidos@{EliminarRepetidos}}
+\index{EliminarRepetidos@{EliminarRepetidos}!ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{EliminarRepetidos()}{EliminarRepetidos()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_lista_ordenada}{typename}} \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \\
+\mbox{\hyperlink{class_lista_ordenada}{void}} \mbox{\hyperlink{class_lista_doble}{Lista\+Doble}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$\+::\+Eliminar\+Repetidos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Elimina elementos repetidos de la lista. 
+
+
+
+Definition at line \mbox{\hyperlink{_lista_doble_8hpp_source_l00451}{451}} of file \mbox{\hyperlink{_lista_doble_8hpp_source}{Lista\+Doble.\+hpp}}.
+
+\Hypertarget{class_lista_doble_a5720c23ab13c75d30469ccbb3fdda3ec}\label{class_lista_doble_a5720c23ab13c75d30469ccbb3fdda3ec} 
+\index{ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}!EstaVacia@{EstaVacia}}
+\index{EstaVacia@{EstaVacia}!ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{EstaVacia()}{EstaVacia()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_lista_ordenada}{typename}} \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \\
+\mbox{\hyperlink{class_lista_ordenada}{bool}} \mbox{\hyperlink{class_lista_doble}{Lista\+Doble}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$\+::\+Esta\+Vacia (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Comprueba si la lista est{\ucr} vac{\ucr}a. 
+
+\begin{DoxyReturn}{Returns}
+True si la lista est{\ucr} vac{\ucr}a, False en caso contrario. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_lista_doble_8hpp_source_l00494}{494}} of file \mbox{\hyperlink{_lista_doble_8hpp_source}{Lista\+Doble.\+hpp}}.
+
+\Hypertarget{class_lista_doble_a0c5923a8c19955faaa29b92f3af74f9d}\label{class_lista_doble_a0c5923a8c19955faaa29b92f3af74f9d} 
+\index{ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}!Imprimir@{Imprimir}}
+\index{Imprimir@{Imprimir}!ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Imprimir()}{Imprimir()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_lista_ordenada}{typename}} \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \\
+\mbox{\hyperlink{class_lista_ordenada}{void}} \mbox{\hyperlink{class_lista_doble}{Lista\+Doble}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$\+::\+Imprimir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Imprime los elementos de la lista en orden. 
+
+
+
+Definition at line \mbox{\hyperlink{_lista_doble_8hpp_source_l00640}{640}} of file \mbox{\hyperlink{_lista_doble_8hpp_source}{Lista\+Doble.\+hpp}}.
+
+\Hypertarget{class_lista_doble_ae375dd7fbbc4f0ccdff3b351db52ffbf}\label{class_lista_doble_ae375dd7fbbc4f0ccdff3b351db52ffbf} 
+\index{ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}!ImprimirEnReversa@{ImprimirEnReversa}}
+\index{ImprimirEnReversa@{ImprimirEnReversa}!ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ImprimirEnReversa()}{ImprimirEnReversa()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_lista_ordenada}{typename}} \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \\
+\mbox{\hyperlink{class_lista_ordenada}{void}} \mbox{\hyperlink{class_lista_doble}{Lista\+Doble}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$\+::\+Imprimir\+En\+Reversa (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Imprime los elementos de la lista en orden inverso. 
+
+
+
+Definition at line \mbox{\hyperlink{_lista_doble_8hpp_source_l00656}{656}} of file \mbox{\hyperlink{_lista_doble_8hpp_source}{Lista\+Doble.\+hpp}}.
+
+\Hypertarget{class_lista_doble_adb8c5750c4e47da586a36cc0f6523b40}\label{class_lista_doble_adb8c5750c4e47da586a36cc0f6523b40} 
+\index{ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}!Intercambiar@{Intercambiar}}
+\index{Intercambiar@{Intercambiar}!ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Intercambiar()}{Intercambiar()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_lista_ordenada}{typename}} \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \\
+\mbox{\hyperlink{class_lista_ordenada}{void}} \mbox{\hyperlink{class_lista_doble}{Lista\+Doble}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$\+::\+Intercambiar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lista_doble}{Lista\+Doble}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \&}]{lista }\end{DoxyParamCaption})}
+
+
+
+Intercambia el contenido de esta lista con otra lista. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista} & Lista con la que se intercambiar{\ucr} el contenido. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_lista_doble_8hpp_source_l00567}{567}} of file \mbox{\hyperlink{_lista_doble_8hpp_source}{Lista\+Doble.\+hpp}}.
+
+\Hypertarget{class_lista_doble_aa575fdc11a79f21ad565e67fbeac802c}\label{class_lista_doble_aa575fdc11a79f21ad565e67fbeac802c} 
+\index{ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}!ModificarEnPos@{ModificarEnPos}}
+\index{ModificarEnPos@{ModificarEnPos}!ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ModificarEnPos()}{ModificarEnPos()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_lista_ordenada}{typename}} \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \\
+\mbox{\hyperlink{class_lista_ordenada}{void}} \mbox{\hyperlink{class_lista_doble}{Lista\+Doble}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$\+::\+Modificar\+En\+Pos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lista_ordenada}{int}}}]{pos,  }\item[{\mbox{\hyperlink{class_lista_ordenada}{T}}}]{valor }\end{DoxyParamCaption})}
+
+
+
+Modifica el valor de un elemento en una posici{\ucr}n espec{\ucr}fica. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & Posici{\ucr}n del elemento a modificar. \\
+\hline
+{\em valor} & Nuevo valor para el elemento. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_lista_doble_8hpp_source_l00554}{554}} of file \mbox{\hyperlink{_lista_doble_8hpp_source}{Lista\+Doble.\+hpp}}.
+
+\Hypertarget{class_lista_doble_a83b29d2dc513004aa8b9d54f7ec2e561}\label{class_lista_doble_a83b29d2dc513004aa8b9d54f7ec2e561} 
+\index{ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}!ObtenerEnPos@{ObtenerEnPos}}
+\index{ObtenerEnPos@{ObtenerEnPos}!ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ObtenerEnPos()}{ObtenerEnPos()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_lista_ordenada}{typename}} \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \\
+\mbox{\hyperlink{class_lista_ordenada}{T}} \mbox{\hyperlink{class_lista_doble}{Lista\+Doble}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$\+::\+Obtener\+En\+Pos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lista_ordenada}{int}}}]{pos }\end{DoxyParamCaption}) const}
+
+
+
+Obtiene el valor de un elemento en una posici{\ucr}n espec{\ucr}fica. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & Posici{\ucr}n del elemento. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Valor del elemento en la posici{\ucr}n dada. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_lista_doble_8hpp_source_l00542}{542}} of file \mbox{\hyperlink{_lista_doble_8hpp_source}{Lista\+Doble.\+hpp}}.
+
+\Hypertarget{class_lista_doble_a7acc1120ec4d1491b699ca51d3c66af6}\label{class_lista_doble_a7acc1120ec4d1491b699ca51d3c66af6} 
+\index{ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}!ObtenerPrimero@{ObtenerPrimero}}
+\index{ObtenerPrimero@{ObtenerPrimero}!ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ObtenerPrimero()}{ObtenerPrimero()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_lista_ordenada}{typename}} \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \\
+\mbox{\hyperlink{class_lista_ordenada}{T}} \mbox{\hyperlink{class_lista_doble}{Lista\+Doble}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$\+::\+Obtener\+Primero (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtiene el valor del primero elemento de la lista. 
+
+\begin{DoxyReturn}{Returns}
+Tipo de dato de la plantilla 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_lista_doble_8hpp_source_l00498}{498}} of file \mbox{\hyperlink{_lista_doble_8hpp_source}{Lista\+Doble.\+hpp}}.
+
+\Hypertarget{class_lista_doble_a16192ea4f2f2d4f2765945d9e0bd489d}\label{class_lista_doble_a16192ea4f2f2d4f2765945d9e0bd489d} 
+\index{ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}!ObtenerTam@{ObtenerTam}}
+\index{ObtenerTam@{ObtenerTam}!ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ObtenerTam()}{ObtenerTam()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_lista_ordenada}{typename}} \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \\
+\mbox{\hyperlink{class_lista_ordenada}{int}} \mbox{\hyperlink{class_lista_doble}{Lista\+Doble}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$\+::\+Obtener\+Tam (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtiene el tama{\ucr}o actual de la lista. 
+
+\begin{DoxyReturn}{Returns}
+N{\ucr}mero de elementos en la lista. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_lista_doble_8hpp_source_l00628}{628}} of file \mbox{\hyperlink{_lista_doble_8hpp_source}{Lista\+Doble.\+hpp}}.
+
+\Hypertarget{class_lista_doble_a89d64a15cdc76bf2f562198dbb932c77}\label{class_lista_doble_a89d64a15cdc76bf2f562198dbb932c77} 
+\index{ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}!ObtenerUltimo@{ObtenerUltimo}}
+\index{ObtenerUltimo@{ObtenerUltimo}!ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ObtenerUltimo()}{ObtenerUltimo()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_lista_ordenada}{typename}} \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \\
+\mbox{\hyperlink{class_lista_ordenada}{T}} \mbox{\hyperlink{class_lista_doble}{Lista\+Doble}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$\+::\+Obtener\+Ultimo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtiene el valor del ultimo elemento de la lista. 
+
+\begin{DoxyReturn}{Returns}
+Tipo de dato de la plantilla Obtiene el valor del {\ucr}ltimo elemento. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_lista_doble_8hpp_source_l00506}{506}} of file \mbox{\hyperlink{_lista_doble_8hpp_source}{Lista\+Doble.\+hpp}}.
+
+\Hypertarget{class_lista_doble_a492eef6555be5155f8c4a0e9f2cf1c6c}\label{class_lista_doble_a492eef6555be5155f8c4a0e9f2cf1c6c} 
+\index{ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_lista_ordenada}{typename}} \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \\
+\mbox{\hyperlink{class_lista_doble}{Lista\+Doble}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \& \mbox{\hyperlink{class_lista_doble}{Lista\+Doble}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$\mbox{\hyperlink{class_lista_ordenada}{\+::operator}}= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lista_ordenada}{const}} \mbox{\hyperlink{class_lista_doble}{Lista\+Doble}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \&}]{lista }\end{DoxyParamCaption})}
+
+
+
+Sobrecarga del operador de asigaci{\ucr}n. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \doxylink{class_lista_doble}{Lista\+Doble}} & de un tipo de dato por referencia \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_lista_doble}{Lista\+Doble} por referencia 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_lista_doble_8hpp_source_l00288}{288}} of file \mbox{\hyperlink{_lista_doble_8hpp_source}{Lista\+Doble.\+hpp}}.
+
+\Hypertarget{class_lista_doble_ade1169fc7584302c8570dcb433a4ca0a}\label{class_lista_doble_ade1169fc7584302c8570dcb433a4ca0a} 
+\index{ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_lista_ordenada}{typename}} \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \\
+\mbox{\hyperlink{class_lista_ordenada}{T}} \& \mbox{\hyperlink{class_lista_doble}{Lista\+Doble}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$\mbox{\hyperlink{class_lista_ordenada}{\+::operator}}\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lista_ordenada}{int}}}]{pos }\end{DoxyParamCaption})}
+
+
+
+Acceso de escritura a un elemento por su posicion. 
+
+
+
+Definition at line \mbox{\hyperlink{_lista_doble_8hpp_source_l00515}{515}} of file \mbox{\hyperlink{_lista_doble_8hpp_source}{Lista\+Doble.\+hpp}}.
+
+\Hypertarget{class_lista_doble_a3c57564522fbcef56a6554a0ce2598ee}\label{class_lista_doble_a3c57564522fbcef56a6554a0ce2598ee} 
+\index{ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_lista_ordenada}{typename}} \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \\
+\mbox{\hyperlink{class_lista_ordenada}{const}} \mbox{\hyperlink{class_lista_ordenada}{T}} \& \mbox{\hyperlink{class_lista_doble}{Lista\+Doble}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$\mbox{\hyperlink{class_lista_ordenada}{\+::operator}}\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lista_ordenada}{int}}}]{pos }\end{DoxyParamCaption}) const}
+
+
+
+Acceso de solo lectura a un elemento por su posicion. 
+
+
+
+Definition at line \mbox{\hyperlink{_lista_doble_8hpp_source_l00529}{529}} of file \mbox{\hyperlink{_lista_doble_8hpp_source}{Lista\+Doble.\+hpp}}.
+
+\Hypertarget{class_lista_doble_a50c3178179fe203a5afa25c16cc7f092}\label{class_lista_doble_a50c3178179fe203a5afa25c16cc7f092} 
+\index{ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}!Ordenar@{Ordenar}}
+\index{Ordenar@{Ordenar}!ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Ordenar()}{Ordenar()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_lista_ordenada}{typename}} \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \\
+\mbox{\hyperlink{class_lista_ordenada}{void}} \mbox{\hyperlink{class_lista_doble}{Lista\+Doble}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$\+::\+Ordenar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Ordena los elementos de la lista utilizando el algoritmo de ordenamiento por inserci{\ucr}n. 
+
+
+
+Definition at line \mbox{\hyperlink{_lista_doble_8hpp_source_l00707}{707}} of file \mbox{\hyperlink{_lista_doble_8hpp_source}{Lista\+Doble.\+hpp}}.
+
+\Hypertarget{class_lista_doble_ad3b67be2471893c0cf080f06083aa188}\label{class_lista_doble_ad3b67be2471893c0cf080f06083aa188} 
+\index{ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}!SeEncuentraValor@{SeEncuentraValor}}
+\index{SeEncuentraValor@{SeEncuentraValor}!ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SeEncuentraValor()}{SeEncuentraValor()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_lista_ordenada}{typename}} \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \\
+\mbox{\hyperlink{class_lista_ordenada}{bool}} \mbox{\hyperlink{class_lista_doble}{Lista\+Doble}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$\+::\+Se\+Encuentra\+Valor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lista_ordenada}{T}}}]{valor }\end{DoxyParamCaption}) const}
+
+
+
+Buscar si existe un valor en la lista. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Valor} & a buscar en la lista \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_lista_doble_8hpp_source_l00469}{469}} of file \mbox{\hyperlink{_lista_doble_8hpp_source}{Lista\+Doble.\+hpp}}.
+
+\Hypertarget{class_lista_doble_a6e526eb832f9f0185f2948e2225b63da}\label{class_lista_doble_a6e526eb832f9f0185f2948e2225b63da} 
+\index{ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}!Transferir@{Transferir}}
+\index{Transferir@{Transferir}!ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Transferir()}{Transferir()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_lista_ordenada}{typename}} \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \\
+\mbox{\hyperlink{class_lista_ordenada}{void}} \mbox{\hyperlink{class_lista_doble}{Lista\+Doble}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$\+::\+Transferir (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lista_doble}{Lista\+Doble}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \&}]{lista }\end{DoxyParamCaption})}
+
+
+
+Transfiere todos los elementos de esta lista a otra lista, dejando esta lista vac{\ucr}a. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista} & Lista destino donde se transferir{\ucr}n los elementos. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_lista_doble_8hpp_source_l00582}{582}} of file \mbox{\hyperlink{_lista_doble_8hpp_source}{Lista\+Doble.\+hpp}}.
+
+\Hypertarget{class_lista_doble_a2d13b191a1bdf1691ad4cab39c8e6ae7}\label{class_lista_doble_a2d13b191a1bdf1691ad4cab39c8e6ae7} 
+\index{ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}!Transferir@{Transferir}}
+\index{Transferir@{Transferir}!ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Transferir()}{Transferir()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_lista_ordenada}{typename}} \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \\
+\mbox{\hyperlink{class_lista_ordenada}{void}} \mbox{\hyperlink{class_lista_doble}{Lista\+Doble}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$\+::\+Transferir (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lista_doble}{Lista\+Doble}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \&}]{lista,  }\item[{\mbox{\hyperlink{class_lista_ordenada}{int}}}]{pos\+Inicial }\end{DoxyParamCaption})}
+
+
+
+Transfiere los elementos de una subsecci{\ucr}n de esta lista a otra lista. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista} & Lista destino donde se transferir{\ucr}n los elementos. \\
+\hline
+{\em pos\+Inicial} & Posici{\ucr}n inicial de la subsecci{\ucr}n a transferir. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_lista_doble_8hpp_source_l00592}{592}} of file \mbox{\hyperlink{_lista_doble_8hpp_source}{Lista\+Doble.\+hpp}}.
+
+\Hypertarget{class_lista_doble_a4692d73f4bea53679dab3ca8c6b1c377}\label{class_lista_doble_a4692d73f4bea53679dab3ca8c6b1c377} 
+\index{ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}!Transferir@{Transferir}}
+\index{Transferir@{Transferir}!ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Transferir()}{Transferir()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_lista_ordenada}{typename}} \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \\
+\mbox{\hyperlink{class_lista_ordenada}{void}} \mbox{\hyperlink{class_lista_doble}{Lista\+Doble}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$\+::\+Transferir (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lista_doble}{Lista\+Doble}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \&}]{lista,  }\item[{\mbox{\hyperlink{class_lista_ordenada}{int}}}]{pos\+Inicial,  }\item[{\mbox{\hyperlink{class_lista_ordenada}{int}}}]{pos\+Final }\end{DoxyParamCaption})}
+
+
+
+Transfiere los elementos dentro de un rango de posiciones de esta lista a otra lista. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista} & Lista destino donde se transferir{\ucr}n los elementos. \\
+\hline
+{\em pos\+Inicial} & Posici{\ucr}n inicial del rango a transferir. \\
+\hline
+{\em pos\+Final} & Posici{\ucr}n final del rango a transferir. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_lista_doble_8hpp_source_l00603}{603}} of file \mbox{\hyperlink{_lista_doble_8hpp_source}{Lista\+Doble.\+hpp}}.
+
+\Hypertarget{class_lista_doble_a2ff59f46ed34cd934c29339c9c4ea2c9}\label{class_lista_doble_a2ff59f46ed34cd934c29339c9c4ea2c9} 
+\index{ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}!Vaciar@{Vaciar}}
+\index{Vaciar@{Vaciar}!ListaDoble$<$ T $>$@{ListaDoble$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Vaciar()}{Vaciar()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_lista_ordenada}{typename}} \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \\
+\mbox{\hyperlink{class_lista_ordenada}{void}} \mbox{\hyperlink{class_lista_doble}{Lista\+Doble}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$\+::\+Vaciar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Vac{\ucr}a la lista, eliminando todos sus elementos. 
+
+
+
+Definition at line \mbox{\hyperlink{_lista_doble_8hpp_source_l00632}{632}} of file \mbox{\hyperlink{_lista_doble_8hpp_source}{Lista\+Doble.\+hpp}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/omarpacheco/uni/4sem/\+Estructuras\+De\+Datos/\+Listas/\+Lista\+Ordenada/lib/\mbox{\hyperlink{_lista_doble_8hpp}{Lista\+Doble.\+hpp}}\end{DoxyCompactItemize}

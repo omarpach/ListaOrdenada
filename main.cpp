@@ -1,3 +1,11 @@
+/**
+ * @author Omar Pacheco
+ * @author Denisse Antunez
+ * @file main.cpp
+ * Demostración de lo que se puede hacer con
+ * la clase ListaOrdenada
+ */
+
 #include "ListaOrdenada.hpp"
 
 #include <cstdlib>

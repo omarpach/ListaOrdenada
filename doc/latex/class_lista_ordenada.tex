@@ -1,0 +1,311 @@
+\doxysection{Lista\+Ordenada\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_lista_ordenada}{}\label{class_lista_ordenada}\index{ListaOrdenada$<$ T $>$@{ListaOrdenada$<$ T $>$}}
+
+
+Implementa una lista ordenada.  
+
+
+
+
+{\ttfamily \#include $<$Lista\+Ordenada.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_lista_ordenada_a7ec4131fded5b67943dd8db6effae609}{Lista\+Ordenada}} ()
+\begin{DoxyCompactList}\small\item\em Constructor por default. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista_ordenada_aac0d7f0162bd45c7ae3dbd8d1ee03148}{\texorpdfstring{$\sim$}{\string~}\+Lista\+Ordenada}} ()
+\begin{DoxyCompactList}\small\item\em Destructor por default. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista_ordenada_a59915e0d0aa08237372f7b4fbd6f46c1}{Lista\+Ordenada}} (\mbox{\hyperlink{class_lista_ordenada}{const}} \mbox{\hyperlink{class_lista_ordenada}{Lista\+Ordenada}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \&\mbox{\hyperlink{class_lista_ordenada}{lista1}})
+\begin{DoxyCompactList}\small\item\em Constructor de copias. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista_ordenada}{Lista\+Ordenada}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \& \mbox{\hyperlink{class_lista_ordenada_aaa66064096f46ee2c69b66354de3e042}{operator=}} (\mbox{\hyperlink{class_lista_ordenada}{const}} \mbox{\hyperlink{class_lista_ordenada}{Lista\+Ordenada}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \&\mbox{\hyperlink{class_lista_ordenada}{lista1}})
+\begin{DoxyCompactList}\small\item\em Sobrecarga de operador de asignación. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista_ordenada}{void}} \mbox{\hyperlink{class_lista_ordenada_ac2b5068ca0b4a383328748c6ef1be643}{Agregar}} (\mbox{\hyperlink{class_lista_ordenada}{T}} valor)
+\begin{DoxyCompactList}\small\item\em Método para agregar elementos a la lista de forma ordenada ascendentemente. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista_ordenada}{void}} \mbox{\hyperlink{class_lista_ordenada_a0f5780d97737623d721a3228956429c2}{Eliminar}} (\mbox{\hyperlink{class_lista_ordenada}{T}} valor)
+\begin{DoxyCompactList}\small\item\em Método para eliminar la primera ocurrencia de un elemento de la lista con el valor dado. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista_ordenada}{bool}} \mbox{\hyperlink{class_lista_ordenada_a32b14aef8d9af679861c1f5ee858dbf0}{Buscar\+Elemento}} (\mbox{\hyperlink{class_lista_ordenada}{T}} valor) \mbox{\hyperlink{class_lista_ordenada}{const}}
+\begin{DoxyCompactList}\small\item\em Método para buscar un elemento. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista_ordenada}{void}} \mbox{\hyperlink{class_lista_ordenada_a72e74fbf2233358f3fbb5fcad434ba02}{Vaciar}} ()
+\begin{DoxyCompactList}\small\item\em Método para vaciar la lista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista_ordenada}{bool}} \mbox{\hyperlink{class_lista_ordenada_a0268f665ebbb6d07ddd7cc61828dcd94}{Esta\+Vacia}} () \mbox{\hyperlink{class_lista_ordenada}{const}}
+\begin{DoxyCompactList}\small\item\em Método saber si está vacía la lista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista_ordenada}{int}} \mbox{\hyperlink{class_lista_ordenada_a05ae45f2b95696d900f8b80414b450bc}{Obtener\+Tam}} () \mbox{\hyperlink{class_lista_ordenada}{const}}
+\begin{DoxyCompactList}\small\item\em Método para obtener el tamaño de la lista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista_ordenada}{void}} \mbox{\hyperlink{class_lista_ordenada_a00878f044f01ca350ec4927531befe2f}{Imprimir\+Ascendente}} () \mbox{\hyperlink{class_lista_ordenada}{const}}
+\begin{DoxyCompactList}\small\item\em Método para imprimir la lista de forma ascendente. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista_ordenada}{void}} \mbox{\hyperlink{class_lista_ordenada_a4b6d413242b26d41913309b61c7db1d2}{Imprimir\+Descendente}} () \mbox{\hyperlink{class_lista_ordenada}{const}}
+\begin{DoxyCompactList}\small\item\em Método para imprimir la lista de forma descendente. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista_ordenada}{Lista\+Ordenada}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \mbox{\hyperlink{class_lista_ordenada_a7d1d56ece5f37ec0c39e973271928a3a}{Mezclar}} (\mbox{\hyperlink{class_lista_ordenada}{const}} \mbox{\hyperlink{class_lista_ordenada}{Lista\+Ordenada}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \&lista) \mbox{\hyperlink{class_lista_ordenada}{const}}
+\begin{DoxyCompactList}\small\item\em Método para mezclar dos listas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Lista\+Ordenada$<$ T $>$}
+Implementa una lista ordenada. 
+
+Esta clase permite agregar elementos de manera ascendente
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Tipo de dato de los elementos a guardar en la lista \\
+\hline
+\end{DoxyTemplParams}
+
+
+Definition at line \mbox{\hyperlink{_lista_ordenada_8hpp_source_l00021}{21}} of file \mbox{\hyperlink{_lista_ordenada_8hpp_source}{Lista\+Ordenada.\+hpp}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_lista_ordenada_a7ec4131fded5b67943dd8db6effae609}\label{class_lista_ordenada_a7ec4131fded5b67943dd8db6effae609} 
+\index{ListaOrdenada$<$ T $>$@{ListaOrdenada$<$ T $>$}!ListaOrdenada@{ListaOrdenada}}
+\index{ListaOrdenada@{ListaOrdenada}!ListaOrdenada$<$ T $>$@{ListaOrdenada$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ListaOrdenada()}{ListaOrdenada()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_lista_ordenada}{typename}} \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \\
+\mbox{\hyperlink{class_lista_ordenada}{Lista\+Ordenada}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$\mbox{\hyperlink{class_lista_ordenada}{\+::\+Lista\+Ordenada}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor por default. 
+
+
+
+Definition at line \mbox{\hyperlink{_lista_ordenada_8hpp_source_l00115}{115}} of file \mbox{\hyperlink{_lista_ordenada_8hpp_source}{Lista\+Ordenada.\+hpp}}.
+
+\Hypertarget{class_lista_ordenada_aac0d7f0162bd45c7ae3dbd8d1ee03148}\label{class_lista_ordenada_aac0d7f0162bd45c7ae3dbd8d1ee03148} 
+\index{ListaOrdenada$<$ T $>$@{ListaOrdenada$<$ T $>$}!````~ListaOrdenada@{\texorpdfstring{$\sim$}{\string~}ListaOrdenada}}
+\index{````~ListaOrdenada@{\texorpdfstring{$\sim$}{\string~}ListaOrdenada}!ListaOrdenada$<$ T $>$@{ListaOrdenada$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}ListaOrdenada()}{\string~ListaOrdenada()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_lista_ordenada}{typename}} \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \\
+\mbox{\hyperlink{class_lista_ordenada}{Lista\+Ordenada}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$\+::\texorpdfstring{$\sim$}{\string~}\mbox{\hyperlink{class_lista_ordenada}{Lista\+Ordenada}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor por default. 
+
+
+
+Definition at line \mbox{\hyperlink{_lista_ordenada_8hpp_source_l00120}{120}} of file \mbox{\hyperlink{_lista_ordenada_8hpp_source}{Lista\+Ordenada.\+hpp}}.
+
+\Hypertarget{class_lista_ordenada_a59915e0d0aa08237372f7b4fbd6f46c1}\label{class_lista_ordenada_a59915e0d0aa08237372f7b4fbd6f46c1} 
+\index{ListaOrdenada$<$ T $>$@{ListaOrdenada$<$ T $>$}!ListaOrdenada@{ListaOrdenada}}
+\index{ListaOrdenada@{ListaOrdenada}!ListaOrdenada$<$ T $>$@{ListaOrdenada$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ListaOrdenada()}{ListaOrdenada()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_lista_ordenada}{typename}} \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \\
+\mbox{\hyperlink{class_lista_ordenada}{Lista\+Ordenada}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$\mbox{\hyperlink{class_lista_ordenada}{\+::\+Lista\+Ordenada}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lista_ordenada}{const}} \mbox{\hyperlink{class_lista_ordenada}{Lista\+Ordenada}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \&}]{lista1 }\end{DoxyParamCaption})}
+
+
+
+Constructor de copias. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista} & \doxylink{class_lista_ordenada}{Lista\+Ordenada} de tipo T recibida por referencia \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_lista_ordenada_8hpp_source_l00126}{126}} of file \mbox{\hyperlink{_lista_ordenada_8hpp_source}{Lista\+Ordenada.\+hpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_lista_ordenada_ac2b5068ca0b4a383328748c6ef1be643}\label{class_lista_ordenada_ac2b5068ca0b4a383328748c6ef1be643} 
+\index{ListaOrdenada$<$ T $>$@{ListaOrdenada$<$ T $>$}!Agregar@{Agregar}}
+\index{Agregar@{Agregar}!ListaOrdenada$<$ T $>$@{ListaOrdenada$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Agregar()}{Agregar()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_lista_ordenada}{typename}} \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \\
+\mbox{\hyperlink{class_lista_ordenada}{void}} \mbox{\hyperlink{class_lista_ordenada}{Lista\+Ordenada}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$\+::\+Agregar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lista_ordenada}{T}}}]{valor }\end{DoxyParamCaption})}
+
+
+
+Método para agregar elementos a la lista de forma ordenada ascendentemente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em valor} & Valor a agregar a la lista \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_lista_ordenada_8hpp_source_l00141}{141}} of file \mbox{\hyperlink{_lista_ordenada_8hpp_source}{Lista\+Ordenada.\+hpp}}.
+
+\Hypertarget{class_lista_ordenada_a32b14aef8d9af679861c1f5ee858dbf0}\label{class_lista_ordenada_a32b14aef8d9af679861c1f5ee858dbf0} 
+\index{ListaOrdenada$<$ T $>$@{ListaOrdenada$<$ T $>$}!BuscarElemento@{BuscarElemento}}
+\index{BuscarElemento@{BuscarElemento}!ListaOrdenada$<$ T $>$@{ListaOrdenada$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{BuscarElemento()}{BuscarElemento()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_lista_ordenada}{typename}} \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \\
+\mbox{\hyperlink{class_lista_ordenada}{bool}} \mbox{\hyperlink{class_lista_ordenada}{Lista\+Ordenada}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$\+::\+Buscar\+Elemento (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lista_ordenada}{T}}}]{valor }\end{DoxyParamCaption}) const}
+
+
+
+Método para buscar un elemento. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em valor} & Valor a buscar en la lista \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Booleano que indica si existe o no el elemento en la lista 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_lista_ordenada_8hpp_source_l00163}{163}} of file \mbox{\hyperlink{_lista_ordenada_8hpp_source}{Lista\+Ordenada.\+hpp}}.
+
+\Hypertarget{class_lista_ordenada_a0f5780d97737623d721a3228956429c2}\label{class_lista_ordenada_a0f5780d97737623d721a3228956429c2} 
+\index{ListaOrdenada$<$ T $>$@{ListaOrdenada$<$ T $>$}!Eliminar@{Eliminar}}
+\index{Eliminar@{Eliminar}!ListaOrdenada$<$ T $>$@{ListaOrdenada$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Eliminar()}{Eliminar()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_lista_ordenada}{typename}} \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \\
+\mbox{\hyperlink{class_lista_ordenada}{void}} \mbox{\hyperlink{class_lista_ordenada}{Lista\+Ordenada}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$\+::\+Eliminar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lista_ordenada}{T}}}]{valor }\end{DoxyParamCaption})}
+
+
+
+Método para eliminar la primera ocurrencia de un elemento de la lista con el valor dado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em valor} & Valor a eliminar de la lista \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_lista_ordenada_8hpp_source_l00155}{155}} of file \mbox{\hyperlink{_lista_ordenada_8hpp_source}{Lista\+Ordenada.\+hpp}}.
+
+\Hypertarget{class_lista_ordenada_a0268f665ebbb6d07ddd7cc61828dcd94}\label{class_lista_ordenada_a0268f665ebbb6d07ddd7cc61828dcd94} 
+\index{ListaOrdenada$<$ T $>$@{ListaOrdenada$<$ T $>$}!EstaVacia@{EstaVacia}}
+\index{EstaVacia@{EstaVacia}!ListaOrdenada$<$ T $>$@{ListaOrdenada$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{EstaVacia()}{EstaVacia()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_lista_ordenada}{typename}} \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \\
+\mbox{\hyperlink{class_lista_ordenada}{bool}} \mbox{\hyperlink{class_lista_ordenada}{Lista\+Ordenada}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$\+::\+Esta\+Vacia (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Método saber si está vacía la lista. 
+
+\begin{DoxyReturn}{Returns}
+Booleano que indica si esta o no vacia la lista 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_lista_ordenada_8hpp_source_l00175}{175}} of file \mbox{\hyperlink{_lista_ordenada_8hpp_source}{Lista\+Ordenada.\+hpp}}.
+
+\Hypertarget{class_lista_ordenada_a00878f044f01ca350ec4927531befe2f}\label{class_lista_ordenada_a00878f044f01ca350ec4927531befe2f} 
+\index{ListaOrdenada$<$ T $>$@{ListaOrdenada$<$ T $>$}!ImprimirAscendente@{ImprimirAscendente}}
+\index{ImprimirAscendente@{ImprimirAscendente}!ListaOrdenada$<$ T $>$@{ListaOrdenada$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ImprimirAscendente()}{ImprimirAscendente()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_lista_ordenada}{typename}} \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \\
+\mbox{\hyperlink{class_lista_ordenada}{void}} \mbox{\hyperlink{class_lista_ordenada}{Lista\+Ordenada}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$\+::\+Imprimir\+Ascendente (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Método para imprimir la lista de forma ascendente. 
+
+
+
+Definition at line \mbox{\hyperlink{_lista_ordenada_8hpp_source_l00189}{189}} of file \mbox{\hyperlink{_lista_ordenada_8hpp_source}{Lista\+Ordenada.\+hpp}}.
+
+\Hypertarget{class_lista_ordenada_a4b6d413242b26d41913309b61c7db1d2}\label{class_lista_ordenada_a4b6d413242b26d41913309b61c7db1d2} 
+\index{ListaOrdenada$<$ T $>$@{ListaOrdenada$<$ T $>$}!ImprimirDescendente@{ImprimirDescendente}}
+\index{ImprimirDescendente@{ImprimirDescendente}!ListaOrdenada$<$ T $>$@{ListaOrdenada$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ImprimirDescendente()}{ImprimirDescendente()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_lista_ordenada}{typename}} \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \\
+\mbox{\hyperlink{class_lista_ordenada}{void}} \mbox{\hyperlink{class_lista_ordenada}{Lista\+Ordenada}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$\+::\+Imprimir\+Descendente (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Método para imprimir la lista de forma descendente. 
+
+
+
+Definition at line \mbox{\hyperlink{_lista_ordenada_8hpp_source_l00196}{196}} of file \mbox{\hyperlink{_lista_ordenada_8hpp_source}{Lista\+Ordenada.\+hpp}}.
+
+\Hypertarget{class_lista_ordenada_a7d1d56ece5f37ec0c39e973271928a3a}\label{class_lista_ordenada_a7d1d56ece5f37ec0c39e973271928a3a} 
+\index{ListaOrdenada$<$ T $>$@{ListaOrdenada$<$ T $>$}!Mezclar@{Mezclar}}
+\index{Mezclar@{Mezclar}!ListaOrdenada$<$ T $>$@{ListaOrdenada$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Mezclar()}{Mezclar()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_lista_ordenada}{typename}} \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \\
+\mbox{\hyperlink{class_lista_ordenada}{Lista\+Ordenada}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \mbox{\hyperlink{class_lista_ordenada}{Lista\+Ordenada}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$\+::\+Mezclar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lista_ordenada}{const}} \mbox{\hyperlink{class_lista_ordenada}{Lista\+Ordenada}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \&}]{lista }\end{DoxyParamCaption}) const}
+
+
+
+Método para mezclar dos listas. 
+
+Este método junta los elementos de la lista que llama al método y los elementos de la lista recibida por parámetro, y regresa una nueva lista ordenada con los elementos de ambas listas
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista} & Lista ordenada recibida por referencia \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista ordenada con los valores de ambas listas 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_lista_ordenada_8hpp_source_l00204}{204}} of file \mbox{\hyperlink{_lista_ordenada_8hpp_source}{Lista\+Ordenada.\+hpp}}.
+
+\Hypertarget{class_lista_ordenada_a05ae45f2b95696d900f8b80414b450bc}\label{class_lista_ordenada_a05ae45f2b95696d900f8b80414b450bc} 
+\index{ListaOrdenada$<$ T $>$@{ListaOrdenada$<$ T $>$}!ObtenerTam@{ObtenerTam}}
+\index{ObtenerTam@{ObtenerTam}!ListaOrdenada$<$ T $>$@{ListaOrdenada$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ObtenerTam()}{ObtenerTam()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_lista_ordenada}{typename}} \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \\
+\mbox{\hyperlink{class_lista_ordenada}{int}} \mbox{\hyperlink{class_lista_ordenada}{Lista\+Ordenada}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$\+::\+Obtener\+Tam (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Método para obtener el tamaño de la lista. 
+
+\begin{DoxyReturn}{Returns}
+Tamaño de la lista 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_lista_ordenada_8hpp_source_l00182}{182}} of file \mbox{\hyperlink{_lista_ordenada_8hpp_source}{Lista\+Ordenada.\+hpp}}.
+
+\Hypertarget{class_lista_ordenada_aaa66064096f46ee2c69b66354de3e042}\label{class_lista_ordenada_aaa66064096f46ee2c69b66354de3e042} 
+\index{ListaOrdenada$<$ T $>$@{ListaOrdenada$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!ListaOrdenada$<$ T $>$@{ListaOrdenada$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_lista_ordenada}{typename}} \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \\
+\mbox{\hyperlink{class_lista_ordenada}{Lista\+Ordenada}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \& \mbox{\hyperlink{class_lista_ordenada}{Lista\+Ordenada}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$\mbox{\hyperlink{class_lista_ordenada}{\+::operator}}= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lista_ordenada}{const}} \mbox{\hyperlink{class_lista_ordenada}{Lista\+Ordenada}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \&}]{lista1 }\end{DoxyParamCaption})}
+
+
+
+Sobrecarga de operador de asignación. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista} & \doxylink{class_lista_ordenada}{Lista\+Ordenada} de tipo T recibida por referencia \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_lista_ordenada}{Lista\+Ordenada} por referencia 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_lista_ordenada_8hpp_source_l00133}{133}} of file \mbox{\hyperlink{_lista_ordenada_8hpp_source}{Lista\+Ordenada.\+hpp}}.
+
+\Hypertarget{class_lista_ordenada_a72e74fbf2233358f3fbb5fcad434ba02}\label{class_lista_ordenada_a72e74fbf2233358f3fbb5fcad434ba02} 
+\index{ListaOrdenada$<$ T $>$@{ListaOrdenada$<$ T $>$}!Vaciar@{Vaciar}}
+\index{Vaciar@{Vaciar}!ListaOrdenada$<$ T $>$@{ListaOrdenada$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Vaciar()}{Vaciar()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_lista_ordenada}{typename}} \mbox{\hyperlink{class_lista_ordenada}{T}} $>$ \\
+\mbox{\hyperlink{class_lista_ordenada}{void}} \mbox{\hyperlink{class_lista_ordenada}{Lista\+Ordenada}}$<$ \mbox{\hyperlink{class_lista_ordenada}{T}} $>$\+::\+Vaciar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método para vaciar la lista. 
+
+
+
+Definition at line \mbox{\hyperlink{_lista_ordenada_8hpp_source_l00170}{170}} of file \mbox{\hyperlink{_lista_ordenada_8hpp_source}{Lista\+Ordenada.\+hpp}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/omarpacheco/uni/4sem/\+Estructuras\+De\+Datos/\+Listas/\+Lista\+Ordenada/\mbox{\hyperlink{_lista_ordenada_8hpp}{Lista\+Ordenada.\+hpp}}\end{DoxyCompactItemize}

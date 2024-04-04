@@ -1,0 +1,75 @@
+\doxysection{/\+Users/omarpacheco/uni/4sem/\+Estructuras\+De\+Datos/\+Listas/\+Lista\+Ordenada/main.cpp}
+\hypertarget{main_8cpp_source}{}\label{main_8cpp_source}\mbox{\hyperlink{main_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00009}00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_lista_ordenada_8hpp}{ListaOrdenada.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00011}00011\ \textcolor{preprocessor}{\#include\ <cstdlib>}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00012}00012\ \textcolor{preprocessor}{\#include\ <ctime>}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00013}00013\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00015}00015\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00017}\mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{00017}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}}()\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00018}00018\ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00019}00019\ \ \ \ \ \mbox{\hyperlink{class_lista_ordenada}{cout}}\ <<\ \textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/Pruebas\ de\ lista\ ordenada-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\(\backslash\)n\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00021}00021\ \ \ \ \ \mbox{\hyperlink{class_lista_ordenada}{ListaOrdenada<int>}}\ \mbox{\hyperlink{class_lista_ordenada}{lista1}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00022}00022\ \ \ \ \ \mbox{\hyperlink{class_lista_ordenada}{ListaOrdenada<int>}}\ \mbox{\hyperlink{class_lista_ordenada}{lista2}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00023}00023\ \ \ \ \ \mbox{\hyperlink{class_lista_ordenada}{ListaOrdenada<int>}}\ \mbox{\hyperlink{class_lista_ordenada}{listaMezclada}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00025}00025\ \ \ \ \ \mbox{\hyperlink{class_lista_ordenada}{srand}}(\mbox{\hyperlink{class_lista_ordenada}{time}}(\textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00027}00027\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_lista_ordenada}{i}}\ =\ 0;\ \mbox{\hyperlink{class_lista_ordenada}{i}}\ <\ 10;\ ++\mbox{\hyperlink{class_lista_ordenada}{i}})\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00028}00028\ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_lista_ordenada}{n}}\ =\ 1\ +\ \mbox{\hyperlink{class_lista_ordenada}{rand}}()\ \%\ 9;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00029}00029\ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_lista_ordenada}{x}}\ =\ 1\ +\ \mbox{\hyperlink{class_lista_ordenada}{rand}}()\ \%\ 9;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00030}00030\ \ \ \ \ \ \ \mbox{\hyperlink{class_lista_ordenada}{lista1}}.\mbox{\hyperlink{class_lista_ordenada_ac2b5068ca0b4a383328748c6ef1be643}{Agregar}}(\mbox{\hyperlink{class_lista_ordenada}{n}});}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00031}00031\ \ \ \ \ \ \ \mbox{\hyperlink{class_lista_ordenada}{lista2}}.\mbox{\hyperlink{class_lista_ordenada_ac2b5068ca0b4a383328748c6ef1be643}{Agregar}}(\mbox{\hyperlink{class_lista_ordenada}{x}});}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00032}00032\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00034}00034\ \ \ \ \ \mbox{\hyperlink{class_lista_ordenada}{cout}}\ <<\ \textcolor{stringliteral}{"{}Lista\ 1\ Ordenada\ Ascendentemente:\ "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00035}00035\ \ \ \ \ \mbox{\hyperlink{class_lista_ordenada}{lista1}}.\mbox{\hyperlink{class_lista_ordenada_a00878f044f01ca350ec4927531befe2f}{ImprimirAscendente}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00036}00036\ \ \ \ \ \mbox{\hyperlink{class_lista_ordenada}{cout}}\ <<\ \mbox{\hyperlink{class_lista_ordenada}{endl}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00038}00038\ \ \ \ \ \mbox{\hyperlink{class_lista_ordenada}{cout}}\ <<\ \textcolor{stringliteral}{"{}Lista\ 1\ Ordenada\ Descendentemente:\ "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00039}00039\ \ \ \ \ \mbox{\hyperlink{class_lista_ordenada}{lista1}}.\mbox{\hyperlink{class_lista_ordenada_a4b6d413242b26d41913309b61c7db1d2}{ImprimirDescendente}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00040}00040\ \ \ \ \ \mbox{\hyperlink{class_lista_ordenada}{cout}}\ <<\ \mbox{\hyperlink{class_lista_ordenada}{endl}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00041}00041\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00042}00042\ \ \ \ \ \mbox{\hyperlink{class_lista_ordenada}{cout}}\ <<\ \textcolor{stringliteral}{"{}Lista\ 2\ Ordenada\ Ascendentemente:\ "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00043}00043\ \ \ \ \ \mbox{\hyperlink{class_lista_ordenada}{lista2}}.\mbox{\hyperlink{class_lista_ordenada_a00878f044f01ca350ec4927531befe2f}{ImprimirAscendente}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00044}00044\ \ \ \ \ \mbox{\hyperlink{class_lista_ordenada}{cout}}\ <<\ \textcolor{charliteral}{'\(\backslash\)n'}\ <<\ \mbox{\hyperlink{class_lista_ordenada}{endl}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00046}00046\ \ \ \ \ \mbox{\hyperlink{class_lista_ordenada}{cout}}\ <<\ \textcolor{stringliteral}{"{}Se\ encuentra\ elemento\ 2\ en\ la\ lista\ 1?\ "{}}\ <<\ \mbox{\hyperlink{class_lista_ordenada}{boolalpha}}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00047}00047\ \ \ \ \ \ \ \ \ \ <<\ \mbox{\hyperlink{class_lista_ordenada}{lista1}}.\mbox{\hyperlink{class_lista_ordenada_a32b14aef8d9af679861c1f5ee858dbf0}{BuscarElemento}}(2)\ <<\ \mbox{\hyperlink{class_lista_ordenada}{endl}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00048}00048\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00049}00049\ \ \ \ \ \mbox{\hyperlink{class_lista_ordenada}{cout}}\ <<\ \textcolor{stringliteral}{"{}Se\ encuentra\ vacia\ la\ lista\ 2?\ "{}}\ <<\ \mbox{\hyperlink{class_lista_ordenada}{boolalpha}}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00050}00050\ \ \ \ \ \ \ \ \ \ <<\ \mbox{\hyperlink{class_lista_ordenada}{lista2}}.\mbox{\hyperlink{class_lista_ordenada_a0268f665ebbb6d07ddd7cc61828dcd94}{EstaVacia}}()\ \textcolor{comment}{//\ TODO:\ Poner\ ?\ al\ revés}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00051}00051\ \ \ \ \ \ \ \ \ \ <<\ \mbox{\hyperlink{class_lista_ordenada}{endl}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00052}00052\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00053}00053\ \ \ \ \ \mbox{\hyperlink{class_lista_ordenada}{cout}}\ <<\ \textcolor{stringliteral}{"{}Tamano\ lista\ 1:\ "{}}\ <<\ \mbox{\hyperlink{class_lista_ordenada}{lista1}}.\mbox{\hyperlink{class_lista_ordenada_a05ae45f2b95696d900f8b80414b450bc}{ObtenerTam}}()}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00054}00054\ \ \ \ \ \ \ \ \ \ <<\ \mbox{\hyperlink{class_lista_ordenada}{endl}};\ \textcolor{comment}{//\ TODO:\ Poner\ acento\ ñ}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00055}00055\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00056}00056\ \ \ \ \ \mbox{\hyperlink{class_lista_ordenada}{listaMezclada}}\ =\ \mbox{\hyperlink{class_lista_ordenada}{lista1}}.\mbox{\hyperlink{class_lista_ordenada_a7d1d56ece5f37ec0c39e973271928a3a}{Mezclar}}(\mbox{\hyperlink{class_lista_ordenada}{lista2}});}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00057}00057\ \ \ \ \ \mbox{\hyperlink{class_lista_ordenada}{cout}}\ <<\ \textcolor{stringliteral}{"{}Listas\ 1\ y\ 2\ mezcladas:\ "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00058}00058\ \ \ \ \ \mbox{\hyperlink{class_lista_ordenada}{listaMezclada}}.\mbox{\hyperlink{class_lista_ordenada_a00878f044f01ca350ec4927531befe2f}{ImprimirAscendente}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00059}00059\ \ \ \ \ \mbox{\hyperlink{class_lista_ordenada}{cout}}\ <<\ \mbox{\hyperlink{class_lista_ordenada}{endl}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00060}00060\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00061}00061\ \ \ \ \ \mbox{\hyperlink{class_lista_ordenada}{cout}}\ <<\ \textcolor{stringliteral}{"{}Vaciando\ lista\ 1..."{}}\ <<\ \mbox{\hyperlink{class_lista_ordenada}{endl}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00062}00062\ \ \ \ \ \mbox{\hyperlink{class_lista_ordenada}{lista1}}.\mbox{\hyperlink{class_lista_ordenada_a72e74fbf2233358f3fbb5fcad434ba02}{Vaciar}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00063}00063\ \ \ \ \ \mbox{\hyperlink{class_lista_ordenada}{cout}}\ <<\ \textcolor{stringliteral}{"{}Lista\ 1:\ "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00064}00064\ \ \ \ \ \mbox{\hyperlink{class_lista_ordenada}{lista1}}.\mbox{\hyperlink{class_lista_ordenada_a00878f044f01ca350ec4927531befe2f}{ImprimirAscendente}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00065}00065\ \ \ \ \ \mbox{\hyperlink{class_lista_ordenada}{cout}}\ <<\ \mbox{\hyperlink{class_lista_ordenada}{endl}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00066}00066\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00067}00067\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00068}00068\ \ \ \}\ \textcolor{keywordflow}{catch}\ (\mbox{\hyperlink{class_lista_doble_1_1_lista_vacia}{ListaDoble<int>::ListaVacia}}\ \&\mbox{\hyperlink{class_lista_ordenada}{exc}})\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00069}00069\ \ \ \ \ \mbox{\hyperlink{class_lista_ordenada}{cerr}}\ <<\ \textcolor{stringliteral}{"{}Error:\ "{}}\ <<\ \mbox{\hyperlink{class_lista_ordenada}{exc}}.what()\ <<\ \mbox{\hyperlink{class_lista_ordenada}{endl}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00070}00070\ \ \ \}\ \textcolor{keywordflow}{catch}\ (\mbox{\hyperlink{class_lista_doble_1_1_fuera_de_rango}{ListaDoble<int>::FueraDeRango}}\ \&\mbox{\hyperlink{class_lista_ordenada}{exc}})\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00071}00071\ \ \ \ \ \mbox{\hyperlink{class_lista_ordenada}{cerr}}\ <<\ \textcolor{stringliteral}{"{}Error:\ "{}}\ <<\ \mbox{\hyperlink{class_lista_ordenada}{exc}}.what()\ <<\ \mbox{\hyperlink{class_lista_ordenada}{endl}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00072}00072\ \ \ \}\ \textcolor{keywordflow}{catch}\ (\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{class_lista_ordenada}{e}})\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00073}00073\ \ \ \ \ \mbox{\hyperlink{class_lista_ordenada}{cerr}}\ <<\ \textcolor{stringliteral}{"{}Error:\ "{}}\ <<\ \mbox{\hyperlink{class_lista_ordenada}{e}}\ <<\ \mbox{\hyperlink{class_lista_ordenada}{endl}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00074}00074\ \ \ \}\ \textcolor{keywordflow}{catch}\ (...)\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00075}00075\ \ \ \ \ \mbox{\hyperlink{class_lista_ordenada}{cerr}}\ <<\ \textcolor{stringliteral}{"{}Ocurrio\ un\ error\ inesperado"{}}\ <<\ \mbox{\hyperlink{class_lista_ordenada}{endl}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00076}00076\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00077}00077\ \}}
+
+\end{DoxyCode}
